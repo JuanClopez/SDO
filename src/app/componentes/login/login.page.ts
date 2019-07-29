@@ -7,6 +7,8 @@ import { AuthService } from "../../servicios/auth.service";
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  email: string;
+  password: string;
 
   constructor(private authService: AuthService) { }
 
@@ -15,7 +17,7 @@ export class LoginPage implements OnInit {
 
   onSubmitLogin()
   {
-    console.log('estas en la funcion')
+    this.authService.login(this.email, this.password);
 
   }
 
