@@ -12,4 +12,14 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+<<<<<<< Updated upstream
+=======
+  onSubmitLogin()
+  {
+    
+    this.authService.login(this.email, this.password);
+
+  }
+
+>>>>>>> Stashed changes
 }
