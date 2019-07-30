@@ -10,18 +10,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { firebaseConfig } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire";
-<<<<<<< Updated upstream
 import { AngularFireAuth } from "@angular/fire/auth";
-=======
-import { AngularFireAuthModule } from "@angular/fire/auth";
-
->>>>>>> Stashed changes
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-   AngularFireModule.initializeApp(firebaseConfig),
-   AngularFireAuthModule],
+   AngularFireModule.initializeApp(firebaseConfig)],
   providers: [
     StatusBar,
     SplashScreen,
